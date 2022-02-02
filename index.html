@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="phone">
+            <div class="screen">
+                <div class="number-display">
+                    <div class="number"><p class="digits">0</p></div>
+                </div>
+                <div class="buttons">
+                    <div class="clear" onclick="updateDisplay('C')"><p id="clear">AC</p></div>
+                    <div class="convert" onclick="updateDisplay('+/-')"><p>+/-</p></div>
+                    <div class="percent" onclick="updateDisplay('%')"><p>%</p></div>
+                    <div class="divide" onclick="buttonClicked('div')"><p>÷</p></div>
+                    <div class="seven" onclick="updateDisplay(7)"><p>7</p></div>
+                    <div class="eight" onclick="updateDisplay(8)"><p>8</p></div>
+                    <div class="nine" onclick="updateDisplay(9)"><p>9</p></div>
+                    <div class="multiply" onclick="buttonClicked('mult')"><p>x</p></div>
+                    <div class="four" onclick="updateDisplay(4)"><p>4</p></div>
+                    <div class="five" onclick="updateDisplay(5)"><p>5</p></div>
+                    <div class="six" onclick="updateDisplay(6)"><p>6</p></div>
+                    <div class="subtract" onclick="buttonClicked('sub')"><p>-</p></div>
+                    <div class="one" onclick="updateDisplay(1)"><p>1</p></div>
+                    <div class="two" onclick="updateDisplay(2)"><p>2</p></div>
+                    <div class="three"onclick="updateDisplay(3)"><p>3</p></div>
+                    <div class="add" onclick="buttonClicked('add')"><p>+</p></div>
+                    <div class="zero" onclick="updateDisplay(0)"><p class="pZero">0</p></div>
+                    <div class="decimal" onclick="updateDisplay('.')"><p>.</p></div>
+                    <div class="equals" onclick="solve()"><p>=</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

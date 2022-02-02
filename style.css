@@ -1,0 +1,258 @@
+.grid-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone {
+    display: grid;
+    height: 500px;
+    width: 240px;
+    border-style: double;
+    border-color: rgb(82, 82, 82);
+    border-radius: 40px;
+    box-shadow: 8px 8px 15px 1px;
+    background-color: black;
+}
+
+.number-display {
+    display: grid;
+    grid-area: top;
+    align-content: end;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+    "."
+    "lower";
+}
+
+.number {
+    grid-area: lower;
+    justify-content: end;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.digits {
+    justify-content: end;
+    margin-top: 0px;
+    padding-right: 17px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.clear {
+    grid-area: clear;
+    background-color: rgb(184, 184, 184);
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.convert {
+    grid-area: convert;
+    background-color: rgb(184, 184, 184);
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.percent {
+    grid-area: percent;
+    background-color: rgb(184, 184, 184);
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.divide {
+    grid-area: divide;
+    background-color: #ff9c08;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+.seven {
+    grid-area: seven;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.eight {
+    grid-area: eight;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.nine {
+    grid-area: nine;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.multiply {
+    grid-area: multiply;
+    background-color: #ff9c08;
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.four {
+    grid-area: four;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.five {
+    grid-area: five;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.six {
+    grid-area: six;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.subtract {
+    grid-area: subtract;
+    background-color: #ff9c08;
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.one {
+    grid-area: one;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.two {
+    grid-area: two;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.three {
+    grid-area: three;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.add {
+    grid-area: add;
+    background-color: #ff9c08;
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.zero {
+    grid-area: zero;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 108px;
+    border-radius: 30px;
+    align-self: start; 
+}
+
+.pZero {
+    height: 48px;
+    width: 48px;
+}
+
+.decimal {
+    grid-area: decimal;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+}
+
+.equals {
+    grid-area: equals;
+    background-color: #ff9c08;
+    color: white;
+    height: 48px;
+    width: 48px;
+    border-radius: 30px;
+    font-size: 30px;
+    
+}
+
+.buttons {
+    display: grid;
+    grid-area: bottom;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 18% 18% 18% 18% 18%;
+    justify-items: center;
+    grid-template-areas:
+    "clear convert percent divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals"
+    ". . . .";
+    font-size: 22px;
+}
+
+.screen {
+    display: grid;
+    background-color: black;
+    border-radius: 40px;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+    "top"
+    "bottom";
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    height: 48px;
+    margin-top: 0px;
+}
