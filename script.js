@@ -2,11 +2,6 @@
 
 const display = document.querySelector("p.digits");
 const clearButton = document.querySelector("#clear");
-const divideButton = document.querySelector(".divide");
-const multiplyButton = document.querySelector(".multiply");
-const subtractButton = document.querySelector(".subtract");
-const addButton = document.querySelector(".add");
-const equalsButton = document.querySelector(".equals");
 
 /* ========== Global Variables ========== */
 
@@ -136,6 +131,11 @@ function solve() {
 }
 
 function clear() {
+    // Zeroes current display value, but returns when math
+    // operators are clicked instead of calling updateDisplay()
+    if (addIsClicked || subIsClicked || multIsClicked || divIsClicked) {
+        currentDisplay = "0";
+        return; }
     // Clears current display, maintains last saved display
     if (clearButton.textContent == "C") {
         currentDisplay = "0";

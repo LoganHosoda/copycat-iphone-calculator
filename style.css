@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    align-items: center;
+    align-content: center;
     justify-content: center;
 }
 
